@@ -1,0 +1,23 @@
+.BotStage,
+.PlayerStage {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.BotStage {
+	height: 200px;
+	width: 50vw;
+	min-width: 540px;
+	max-width: 660px;
+	background-color: #28426d;
+}
+
+.PlayerStage {
+	height: 400px;
+	width: 84vw;
+	min-width: 1040px;
+	max-width: 1200px;
+	background-color: #6b9ff4;
+}
+

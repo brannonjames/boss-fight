@@ -1,0 +1,4 @@
+.PlayerStage {
+	display: flex;
+	justify-content: space-around;
+}

@@ -1,0 +1,38 @@
+.BattleButton {
+	position: absolute;
+	right: 74px;
+	top: 74px;
+	text-align: center;
+	line-height: 34px;
+	animation: 800ms pulse linear infinite;
+}
+
+.BattleButton:hover {
+	cursor: pointer;
+}
+
+.BattleButton p {
+	font-family: 'Russo One', sans-serif;
+	margin: 0;
+}
+
+.BattleButton h2 {
+	margin: 0;
+	font-size: 62px;
+}
+
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(1) rotate(20deg);
+	}
+
+	50% {
+		transform: scale(1.2) rotate(20deg);
+	}
+
+	100% {
+		transform: scale(1) rotate(20deg);
+	}
+}

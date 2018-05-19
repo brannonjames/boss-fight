@@ -1,0 +1,55 @@
+.BossCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 220px;
+	height: 330px;
+	overflow: hidden;
+	border: 1px solid black;
+	border-radius: 2px;
+	position: relative;
+	background-color: #eff6f9;
+	padding: 8px;
+	transition: 80ms linear;
+}
+
+.BossCard img {
+	max-height: 60%;
+}
+
+.BossCard h3 {
+	max-height: 20%;
+}
+
+.botCard {
+	height: 150px;
+	width: 100px;
+
+	transition: 80ms linear 800ms;
+}
+
+
+.playerFocus,
+.botFocus {
+	box-shadow: 0px 0px 20px white, -0px -0px 20px white;
+}
+
+.playerFocus {
+	transform: translateY(-50px);
+}
+
+.botFocus {
+	transform: translateY(50px);
+}
+
+
+.card-back {
+	height: 100%;
+	width: 100%;
+	background-color: grey;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+

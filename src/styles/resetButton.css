@@ -1,0 +1,16 @@
+.resetButton {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 20;
+
+  padding: 60px;
+  /* background-color: white; */
+  background-color: #82ff86;
+  box-shadow: 1px 1px 10px black;
+}
+
+.resetButton h1,
+.resetButton button {
+  margin: 20px 0;
+}

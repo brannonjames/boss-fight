@@ -1,0 +1,8 @@
+.Title {
+	font-size: 48px;
+	position: absolute;
+	left: 74px;
+	top: 74px;
+	transform: rotate(-20deg);
+	font-weight: 1000
+}
