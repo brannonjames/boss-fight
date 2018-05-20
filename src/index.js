@@ -10,20 +10,20 @@ import registerServiceWorker from './registerServiceWorker';
 import thunk from 'redux-thunk';
 
 const store = createStore(
-	rootReducer,
-	compose(
-		applyMiddleware(thunk),
-		// window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-	)
+  rootReducer,
+  compose(
+    applyMiddleware(thunk),
+    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
 );
 
 
 ReactDOM.render(
-	<Provider store={store}>
-		<Router>
-			<App />
-		</Router>
-	</Provider>,
+  <Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>,
 document.getElementById('root')
 );
 registerServiceWorker();

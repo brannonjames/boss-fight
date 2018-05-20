@@ -9,55 +9,55 @@ import '../styles/stage.css';
 
 class BotStage extends React.Component {
 
-	componentDidUpdate(){
-		if(!this.props.bot.bosses.some(boss => boss.selected) && this.props.bot.bosses.length > 0){
-			this.selectRandomCard();
-		}
-	}
+  componentDidUpdate(){
+    if(!this.props.bot.bosses.some(boss => boss.selected) && this.props.bot.bosses.length > 0){
+      this.selectRandomCard();
+    }
+  }
 
-	componentDidMount(){
-		// setTimeout(() => {
-			this.selectRandomCard();
-		// }, 1000)
-	}
+  componentDidMount(){
+    // setTimeout(() => {
+      this.selectRandomCard();
+    // }, 1000)
+  }
 
 
-	selectRandomCard(){
-		const { botSelectedToggle, bot } = this.props;
-		const randomIndex = Math.floor(Math.random() * bot.bosses.length);
-		botSelectedToggle(bot.bosses[randomIndex].id);
-	}
+  selectRandomCard(){
+    const { botSelectedToggle, bot } = this.props;
+    const randomIndex = Math.floor(Math.random() * bot.bosses.length);
+    botSelectedToggle(bot.bosses[randomIndex].id);
+  }
 
-	render(){
-		let cards = this.props.bot.bosses.map(boss => (
-			<BossCard
-				key={boss.id}
-				{...boss}
-				showing={boss.showing}
-				isBot={this.props.isBot}
-				 />
-		))
-		return (
-			<section className="BotStage">
-				{cards}
-			</section>
-		)
-	}
+  render(){
+    let cards = this.props.bot.bosses.map(boss => (
+      <BossCard
+        key={boss.id}
+        {...boss}
+        showing={boss.showing}
+        isBot={this.props.isBot}
+         />
+    ))
+    return (
+      <section className="BotStage">
+        {cards}
+      </section>
+    )
+  }
 
 }
 
 
 function mapStateToProps(state){
-	return {
-		bot: state.bot,
-		isBot: true,
+  return {
+    bot: state.bot,
+    isBot: true,
 
-	}
+  }
 }
 
 const dispatchers = {
-	botSelectedToggle,
-	checkIfReadyToBattle
+  botSelectedToggle,
+  checkIfReadyToBattle
 }
 
 
