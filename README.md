@@ -1,5 +1,7 @@
 # BOSSFIGHT
 
+[Live Demo](https://silly-kowalevski-40643c.netlify.com/)
+
 My first time really playing with react and redux, BossFight is a 
 simple virtual card game where you battle different "bosses". 
 
