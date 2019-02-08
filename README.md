@@ -26,6 +26,6 @@ Currently working on a more strategic gameplay.
 
 ## Screenshots
 
-![main-screen])(https://i.imgur.com/68xx10W.png)
+![main-screen](https://i.imgur.com/68xx10W.png)
 ![battle-screen](https://i.imgur.com/XIbU5QC.png)
 
