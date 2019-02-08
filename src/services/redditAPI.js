@@ -7,9 +7,10 @@ function fetchReddit() {
     return axios.get(URL)
     .then(res => res.data.data.children)
     .then(children => {
-      return children.filter(child => child.data.preview.images[0].source.url).map(child => {
-        let {id, title: name, author: creator, ups: offense, num_comments: defense, preview} = child.data;
-        let photo = preview.images[0].variants.gif ? preview.images[0].variants.gif.source.url : preview.images[0].source.url
+      return children.filter(({ data: { url } }) => {
+        return url.endsWith('.jpg') || url.endsWith('.png') || url.endsWith('gif');
+      }).map(child => {
+        let {id, title: name, author: creator, ups: offense, num_comments: defense, url: photo} = child.data;
         return {
           id,
           name,
